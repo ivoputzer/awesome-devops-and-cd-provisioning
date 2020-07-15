@@ -6,7 +6,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
       with:
-        ref: ref/heads/master
+        ref: refs/heads/master
     - name: Ansible provisioning
       env:
         ANSIBLE_HOST_KEY_CHECKING: False
