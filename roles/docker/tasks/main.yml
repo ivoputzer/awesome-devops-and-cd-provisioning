@@ -13,6 +13,7 @@
       - ca-certificates
       - python3-pip
     state: present
+    update_cache: true
 
 - name: Ensure docker python dependencies are present
   pip:
