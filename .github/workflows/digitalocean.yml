@@ -7,6 +7,9 @@ jobs:
     - uses: actions/checkout@master
       with:
         ref: refs/heads/master
+    - name: Ansible Syntax Check
+      run: |
+        ansible-playbook provisioning.yml -i env/production --syntax-check
     - name: Ansible provisioning
       env:
         ANSIBLE_HOST_KEY_CHECKING: False
