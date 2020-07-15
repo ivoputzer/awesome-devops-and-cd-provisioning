@@ -14,4 +14,4 @@
     state: present
     key: "https://github.com/{{ item.name }}.keys"
     validate_certs: false
-  with_items: "{{ users }}"
+  with_items: {{ users }}
