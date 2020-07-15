@@ -1,0 +1,17 @@
+name: Digitalocean
+on: [push]
+jobs:
+  production:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+      with:
+        ref: ref/heads/master
+    - name: Ansible provisioning
+      env:
+        ANSIBLE_HOST_KEY_CHECKING: False
+        SSH_USER: ${{ secrets.SSH_USER }}
+        SSH_PASSWORD: ${{ secrets.SSH_PASSWORD }}
+      run: |
+        ansible-playbook --extra-vars="ansible_user=${SSH_USER} ansible_password=${SSH_PASSWORD}" -i env/production provisioning.yml
+
