@@ -5,6 +5,15 @@
       - name: ivoputzer
         comment: Ivo von Putzer Reibegg
         password: $5$CxNlRUfkip1zf1Gw$d8jz.HFz/wDe.42VMOi1No2mEpRcCEIUYDJj7QAGv81
+      - name: federicotessari
+        comment: Federico Tessari
+        password: $5$CxNlRUfkip1zf1Gw$d8jz.HFz/wDe.42VMOi1No2mEpRcCEIUYDJj7QAGv81
+      - name: tytanics
+        comment: Tiziano Pellegrino
+        password: $5$CxNlRUfkip1zf1Gw$d8jz.HFz/wDe.42VMOi1No2mEpRcCEIUYDJj7QAGv81
+      - name: ccprogetti
+        comment: Andrea Cavalieri
+        password: $5$CxNlRUfkip1zf1Gw$d8jz.HFz/wDe.42VMOi1No2mEpRcCEIUYDJj7QAGv81
   roles:
     - role: users
 
